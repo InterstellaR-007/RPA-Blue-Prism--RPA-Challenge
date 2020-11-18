@@ -1,0 +1,31 @@
+﻿<process name="rpa challenge process" version="1.0" bpversion="6.9.0.26970" narrative="" byrefcollection="true" preferredid="81ee1715-4704-4933-8e4c-d020fae8b40b">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="ce40db5d-285b-4af5-92d3-1559e6f57188" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>1cf831c0-6caf-4278-bde6-d0e5e8222b31</onsuccess>
+  </stage>
+  <stage stageid="50db0a90-4270-4c99-8492-863263598d64" name="End" type="End">
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="fe43123e-4b27-4cd7-a2ab-ecf7defbf012" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="1cf831c0-6caf-4278-bde6-d0e5e8222b31" name="rpa_challenge::launch" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-30" />
+    <onsuccess>2322639f-c533-4f5a-bc47-0178723a8c57</onsuccess>
+    <resource object="rpa_challenge" action="launch" />
+  </stage>
+  <stage stageid="2322639f-c533-4f5a-bc47-0178723a8c57" name="rpa_challenge::Enter Details" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="30" />
+    <onsuccess>50db0a90-4270-4c99-8492-863263598d64</onsuccess>
+    <resource object="rpa_challenge" action="Enter Details" />
+  </stage>
+</process>
